@@ -22,6 +22,7 @@
 		B4A9F696205BF77A00FA0753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4A9F699205BF77A00FA0753 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4A9F69B205BF77A00FA0753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4A9F6A1205BF88D00FA0753 /* Concentration.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Concentration.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 			children = (
 				B4A9F68E205BF77A00FA0753 /* Concentration */,
 				B4A9F68D205BF77A00FA0753 /* Products */,
+				B4A9F6A2205BF89500FA0753 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +56,30 @@
 		B4A9F68E205BF77A00FA0753 /* Concentration */ = {
 			isa = PBXGroup;
 			children = (
-				B4A9F68F205BF77A00FA0753 /* AppDelegate.swift */,
+				B4A9F6A1205BF88D00FA0753 /* Concentration.entitlements */,
 				B4A9F691205BF77A00FA0753 /* ViewController.swift */,
 				B4A9F693205BF77A00FA0753 /* Main.storyboard */,
-				B4A9F696205BF77A00FA0753 /* Assets.xcassets */,
-				B4A9F698205BF77A00FA0753 /* LaunchScreen.storyboard */,
+				B4A9F6A9205BFCF000FA0753 /* Support Files */,
 				B4A9F69B205BF77A00FA0753 /* Info.plist */,
 			);
 			path = Concentration;
+			sourceTree = "<group>";
+		};
+		B4A9F6A2205BF89500FA0753 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4A9F6A9205BFCF000FA0753 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4A9F68F205BF77A00FA0753 /* AppDelegate.swift */,
+				B4A9F696205BF77A00FA0753 /* Assets.xcassets */,
+				B4A9F698205BF77A00FA0753 /* LaunchScreen.storyboard */,
+			);
+			path = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +115,23 @@
 					B4A9F68B205BF77A00FA0753 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.HealthKit = {
+								enabled = 0;
+							};
+							com.apple.HomeKit = {
+								enabled = 0;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
